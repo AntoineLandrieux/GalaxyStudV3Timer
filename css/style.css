@@ -1,0 +1,45 @@
+
+*, *::before, *::after {
+    inset: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+#timer {
+    font-size: max(7vmax, 20px);
+    margin: 20px;
+}
+
+#time {
+    font-size: max(4vmax, 15px);
+    margin: 10px;
+}
+
+a {
+    background-color: #4343ac;
+    color: #fff;
+    border-radius: 10px;
+    font-size: max(3vmax, 10px);
+    margin: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #6182c9;
+    transition: all .2s ease-in-out;
+}
