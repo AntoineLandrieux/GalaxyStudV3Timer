@@ -28,7 +28,7 @@ body {
     margin: 10px;
 }
 
-a {
+a#videolink {
     background-color: #4343ac;
     color: #fff;
     border-radius: 10px;
@@ -37,9 +37,12 @@ a {
     text-transform: uppercase;
     padding: 20px;
     text-decoration: none;
+    transition: all .2s ease-in-out;
 }
 
-a:hover {
+a#videolink:hover {
     background-color: #6182c9;
     transition: all .2s ease-in-out;
 }
+
+
