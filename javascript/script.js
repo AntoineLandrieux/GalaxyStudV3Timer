@@ -4,6 +4,7 @@ const targetDate = new Date(
 ).getTime();
 
 const target = document.getElementById("timer");
+const title = document.getElementsByTagName("title")[0];
 let interval = null;
 
 function updateCountdown() {
@@ -16,6 +17,7 @@ function updateCountdown() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     target.innerText = `${days}d, ${hours}h, ${minutes}m, ${seconds}s`;
+    title.innerHTML = `GalaxyStudV3Timer | ${days}d, ${hours}h, ${minutes}m, ${seconds}s`
 
     if (distance <= 0) {
         clearInterval(interval);
